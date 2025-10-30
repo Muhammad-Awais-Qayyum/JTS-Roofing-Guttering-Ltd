@@ -19,7 +19,10 @@ const queryClient = new QueryClient();
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
+    <div className="hidden md:block">
+
       <CustomCursor />
+      </div>
       <Toaster />
       <Sonner />
       <BrowserRouter>
